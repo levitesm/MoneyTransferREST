@@ -54,7 +54,7 @@ public class AccountManager {
 	{
 		StringBuffer str = new StringBuffer("");
 		if(accounts.containsKey(id)) {System.out.println("Account "+id);
-			for(Balance b :accounts.get(id).getBalances()) str.append(b.getCur() + " : " + b.getBalace() + "\n");
+			for(Balance b :accounts.get(id).getBalances()) str.append(b.getCur() + " : " + b.getBalance() + "\n");
 		}else
 			throw new NoSuchAccountException(id);
 		
