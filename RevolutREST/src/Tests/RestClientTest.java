@@ -103,7 +103,7 @@ public class RestClientTest {
         response= webTarget.path("/accounts/200000001/").request().get();
         List balances = response.readEntity(List.class);
         assert(balances.size()==2);//Now account has USD and RUB balances
-        BigDecimal bal = (BigDecimal)((HashMap)balances.get(1)).get("balace");
+        BigDecimal bal = (BigDecimal)((HashMap)balances.get(1)).get("balance");
         assert(bal.longValue()==20000.0);//300 USD got converted to 20000 RUB
         response= webTarget.path("/transactions/accounts/200000001,200000004/transfermoney/300,USD,RUB").request().get();
         msg = response.readEntity(String.class);
