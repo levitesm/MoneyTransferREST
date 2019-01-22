@@ -4,13 +4,13 @@ import Types.Currency;
 
 public class Balance {
 	
-	private double balace;
+	private double balance;
 	private final Currency currency;
 	
 	
 	public Balance(double balace, Currency cur) {
 		super();
-		this.balace = balace;
+		this.balance = balace;
 		this.currency = cur;
 	}
 	
@@ -19,11 +19,11 @@ public class Balance {
 		this(0, cur);
 	}
 	
-	public double getBalace() {
-		return balace;
+	public double getBalance() {
+		return balance;
 	}
-	public void setBalace(double balace) {
-		this.balace = balace;
+	public void setBalance(double balace) {
+		this.balance = balace;
 	}
 	public Currency getCur() {
 		return currency;
