@@ -32,9 +32,7 @@ import Services.*;
 	    	pxy.setPort(8086);
 	    	server.addConnector(pxy);
 
-	    	// Use ContextHandlerCollection 
 	    	ContextHandlerCollection contexts = new ContextHandlerCollection();
-	    	// Don't forget to add it to the server!
 	    	server.setHandler(contexts);
 
 	    	ServletContextHandler testApp = new ServletContextHandler(contexts, "/",
