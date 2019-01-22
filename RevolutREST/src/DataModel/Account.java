@@ -48,7 +48,7 @@ public class Account {
 		{
 			if(b.getCur()==cur)
 			{
-				b.setBalace(b.getBalace()+sum);
+				b.setBalance(b.getBalance()+sum);
 				return;
 			}
 		}
@@ -65,13 +65,13 @@ public class Account {
 		{
 			if(b.getCur()==cur)
 			{
-				if(b.getBalace()>=sum)
+				if(b.getBalance()>=sum)
 				{
-					b.setBalace(b.getBalace()-sum);
+					b.setBalance(b.getBalance()-sum);
 					return;
 				}
 					
-				else throw new NotEnoughMoneyException(b.getBalace(), cur);
+				else throw new NotEnoughMoneyException(b.getBalance(), cur);
 			}
 		}
 		

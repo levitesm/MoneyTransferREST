@@ -8,9 +8,9 @@ public class Balance {
 	private final Currency currency;
 	
 	
-	public Balance(double balace, Currency cur) {
+	public Balance(double balance, Currency cur) {
 		super();
-		this.balance = balace;
+		this.balance = balance;
 		this.currency = cur;
 	}
 	
@@ -22,8 +22,8 @@ public class Balance {
 	public double getBalance() {
 		return balance;
 	}
-	public void setBalance(double balace) {
-		this.balance = balace;
+	public void setBalance(double balance) {
+		this.balance = balance;
 	}
 	public Currency getCur() {
 		return currency;
